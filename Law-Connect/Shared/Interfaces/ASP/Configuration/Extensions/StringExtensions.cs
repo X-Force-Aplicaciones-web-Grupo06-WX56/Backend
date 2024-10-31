@@ -16,6 +16,7 @@ namespace Law_Connect.Shared.Interfaces.ASP.Configuration.Extensions
                 .ToLower();
         }
 
+
         [GeneratedRegex("(?<!^)([A-Z][a-z]|(?<=[a-z])[A-Z])", RegexOptions.Compiled)]
         private static partial Regex KebabCaseRegex();
     }

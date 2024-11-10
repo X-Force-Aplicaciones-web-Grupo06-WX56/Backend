@@ -17,8 +17,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="IAM\Application\" />
+<<<<<<< HEAD
     <Folder Include="IAM\Domain\Model\Commands\" />
     <Folder Include="IAM\Domain\Model\Queries\" />
+=======
+    <Folder Include="IAM\Domain\Model\Aggregates\" />
+    <Folder Include="IAM\Domain\Model\Commands\" />
+    <Folder Include="IAM\Domain\Model\Queries\" />
+    <Folder Include="IAM\Domain\Model\ValueObjects\" />
+>>>>>>> 8e65b0f6781dc0028b71474bdae69251de555116
     <Folder Include="IAM\Domain\Services\" />
     <Folder Include="IAM\Domain\Repositories\" />
     <Folder Include="IAM\Infrastructure\" />

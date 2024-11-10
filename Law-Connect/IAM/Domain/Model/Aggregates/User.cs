@@ -5,7 +5,7 @@ using System.Text;
 namespace Law_Connect.IAM.Domain.Model.Aggregates
 {
     
-    public class User
+    public partial class User
     {
         public int Id { get; }
         public PersonName Name { get;private set; }

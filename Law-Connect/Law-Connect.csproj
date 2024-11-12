@@ -6,30 +6,35 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Law_Connect</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="IAM\Domain\Repositories\**" />
+    <Compile Remove="IAM\Domain\Services\**" />
+    <Compile Remove="IAM\Interface\**" />
+    <Content Remove="IAM\Domain\Repositories\**" />
+    <Content Remove="IAM\Domain\Services\**" />
+    <Content Remove="IAM\Interface\**" />
+    <EmbeddedResource Remove="IAM\Domain\Repositories\**" />
+    <EmbeddedResource Remove="IAM\Domain\Services\**" />
+    <EmbeddedResource Remove="IAM\Interface\**" />
+    <None Remove="IAM\Domain\Repositories\**" />
+    <None Remove="IAM\Domain\Services\**" />
+    <None Remove="IAM\Interface\**" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="EntityFrameworkCore.CreatedUpdatedDate" Version="8.0.0" />
     <PackageReference Include="Humanizer" Version="2.14.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
     <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="IAM\Application\" />
-<<<<<<< HEAD
-    <Folder Include="IAM\Domain\Model\Commands\" />
-    <Folder Include="IAM\Domain\Model\Queries\" />
-=======
-    <Folder Include="IAM\Domain\Model\Aggregates\" />
-    <Folder Include="IAM\Domain\Model\Commands\" />
-    <Folder Include="IAM\Domain\Model\Queries\" />
-    <Folder Include="IAM\Domain\Model\ValueObjects\" />
->>>>>>> 8e65b0f6781dc0028b71474bdae69251de555116
-    <Folder Include="IAM\Domain\Services\" />
-    <Folder Include="IAM\Domain\Repositories\" />
-    <Folder Include="IAM\Infrastructure\" />
-    <Folder Include="IAM\Interface\" />
-  </ItemGroup>
-
+<ItemGroup>
+  <Folder Include="IAM\Domain\Aggregates\" />
+  <Folder Include="IAM\Domain\ValueObjects\" />
+</ItemGroup>
 </Project>
